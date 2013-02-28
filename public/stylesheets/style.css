@@ -1,0 +1,112 @@
+@font-face
+{
+  font-family: 'DesyrelRegular';
+  src: url('../fonts/desyrel-webfont.eot');
+  src: url('../fonts/desyrel-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/desyrel-webfont.woff') format('woff'),
+  url('../fonts/desyrel-webfont.ttf') format('truetype'),
+  url('../fonts/desyrel-webfont.svg#DesyrelRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body
+{
+  padding: 0px;
+  margin: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a
+{
+  color: #00B7FF;
+}
+
+#notifications
+{
+  display: none;
+}
+
+#top
+{
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+#title
+{
+  margin: 0;
+  float: left;
+}
+
+#title span
+{
+  font-family: 'DesyrelRegular';
+  font-weight: normal;
+  font-size: 1.8em;
+  color: #000;
+  text-decoration: none;
+  padding: 16px;
+}
+
+#twitter_follow,
+#twitter_powered
+{
+  float: right;
+  border-radius: 4px;
+  margin: 8px;
+  padding: 4px;
+}
+
+#twitter_follow a,
+#twitter_powered a
+{
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+#twitter_follow
+{
+  background-color: #ac0000;
+}
+
+#twitter_powered
+{
+  background-color: #4099FF;
+}
+
+#container
+{
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+#container .cell
+{
+  width: 1%;
+  height: 1%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: #fff;
+}
+
+#container .cell.highlight
+{
+  left: 35%!important;
+  top: 25%!important;
+  width: 30%;
+  height: 50%;
+  z-index: 3;
+  box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 9px;
+}
